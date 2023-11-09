@@ -1,0 +1,81 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	display: flex;
+	border: 1px solid red;
+}
+
+header {
+	width: 259px;
+	height: 800px;
+}
+
+header ul {
+	padding-left: -40px;
+	border: 1px solid grey;
+}
+
+header ul li {
+	list-style-type: none;
+	position: relative;
+}
+
+header ul li a {
+	text-decoration: none;
+}
+
+header ul li .menuc2_ql,
+header ul li .menuc2_cdtk {
+	display: none;
+	/*position: absolute;
+	top: 0;
+	left: 0;*/
+	padding-left: -40px !important;
+}
+
+header ul li .menuc2_ql.active,
+header ul li .menuc2_cdtk.active {
+	display: block;
+}
+
+.container .taodon-container {
+	width: 100%;
+	padding: 40px;
+}
+
+.container .taodon-container .form-top {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 30px;
+
+}
+
+.container .taodon-container .form-top input {
+	margin-bottom: 10px;
+}
+
+/* .container .taodon-container .form-bot {
+	display: flex;
+} */
+
+.container .taodon-container .form-bot .form-top-row {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+}
+
+.container .taodon-container .form-bot .form-bot-row {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+}
+
+.container .taodon-container .form-bot .form-bot-row-col {
+	display: flex;
+	gap: 100px;
+	/* justify-content: space-around; */
+}

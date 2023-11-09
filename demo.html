@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Màn hình ẩn</title>
+    <style>
+        /* CSS để tạo màn hình ẩn */
+        #hidden-screen {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+        }
+
+        #hidden-screen .content {
+            width: 200px;
+            height: 100px;
+            background-color: #fff;
+            margin: 20% auto;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        // JavaScript để hiển thị màn hình ẩn khi kích vào
+        function showHiddenScreen() {
+            var hiddenScreen = document.getElementById("hidden-screen");
+            hiddenScreen.style.display = "block";
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Trang chính</h1>
+    <p>Nhấp vào màn hình để hiển thị màn hình ẩn.</p>
+
+    <div id="hidden-screen" onclick="this.style.display = 'none'">
+        <div class="content">
+            <h2>Màn hình ẩn</h2>
+            <p>Đây là nội dung của màn hình ẩn.</p>
+        </div>
+    </div>
+
+    <script>
+        // Gắn sự kiện click vào toàn bộ trang để hiển thị màn hình ẩn
+        document.addEventListener("click", showHiddenScreen);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+design
+	-css (all.min, bt.min, main, reset,....)
+	-js
+	-images  (hình ảnh thuộc cấu trức web)
+	-imgs (hình ảnh minh họa nội dung web)
+	-... 
+	- index.html, inner-pages.html (tệp tin)
+	
+
+
+1.các thuật ngữ dành cho lỗi phần mềm
+	defect(khiếm khuyết - variance: mẫu thuẫn
+	fault:  sai - failure: thât bại
+	problem : trở ngại, vấn đề
+	inconsistency: không nhất quán
+	error: lỗi
+	feature: đặc tính
+	incident: sự cổ
+	bug: hỏng hóc
+	anomaly: dị thường
+2. những hệ thống phần mền lỗi nổi tiểng (infamous software error case studies)
+3. hỏng hóc (hư hỏng, lỗi) lỗi là gì? what is a bug?
+4. 
+5. tại sao lại xảy ra hỏng hóc
+- giai đoạn đặc tả yêu cầu
+	- không viết đặc tả (no written specs)
+	- đặc tả thay đổi liên tục (specs constantly changing).
+	- thiếu việc truyền thông giữa phân tích và phát triển (lack of communication between analyst an developers.)
+- giai đoạn thiết kế:(at design stage)
+	- đặc tả viết kém chất lượng (badly written specs)
+	- công việc gấp rút( rushed job)
+	- thiếu việc truyền thông cho nhau ( lack of communication)
+	- thiếu kiểm tra chất lượng (lack of quality checks)
+- giai đoạn viết mã, lập trình (at coding phase):
+	- thiết kế phúc tạp (design complexity)
+	- tài liệu sơ sài và thiếu (poor documentation)
+	- áp lực về lịch trình (schedule pressure)
+	- những lỗi chủ quan, ngớ ngẩn (plain dumb mistakes).
+	- thiếu kiểm tra chất lượng thích hợp (lack of proper quality checks)
+- những yếu tố khác (other catefory)
+	- nhận định sai, chủ quan ( false positives)
+	- hỏng hóc lặp lại (duplicate bugs)
+	- hỏng hóc băt nguồn từ những lỗi kiểm thử (bugs traced to testing errors)
+7. người kiểm thử phần mềm phải làm gì?
+	- mục đính của kiểm thử phần mềm là tìm lỗi.
+	- tìm ra lỗi càng nhanh càng tốt(find them quickly).
+	- đảm bảo rằng chún đã được sửa chữa( make sure they get fixed).
+8. độ tin cậy
+
+
+- kiểm thử không thể nói rằng lỗi không tồn tại
+	-kiểm thử có thể chỉ ra lỗi, những không thể khẳng định hết lỗi
+	- vì lỗi được phát sinh từ:
+		-đặc tả, thiết kế, viết mã -> có thể khắc phục
+		- môi trường, điều kiện môi trường -> khó
+		- ý thức, hành vi làm việc với phần mềm -> không thể
+8.2 các thuật ngữ của kiểm thử
+
+
+
+
+
+
+-------------------------------------------------------------------các kỹ thuật kiểm thử phần mềm-----------------------------------------------------
+1: định nghĩa kiểm thử phần mềm:
+	- testing is the process of exercising a program with the specific intent of finding errors prior to delivery to the end user.
+	̣-( kiểm thử là tiến trình thực thi chương trình với mục tiêu cụ thể là tìm ra lỗi trước khi bàn giao tới khách hàng).
+2: các nguyên lý kiểm thử:
+	- mọi kiểm tra đều có thể truy veetss đến yêu cầy khách hàng
+	- mọi kiểm tra nên được lập kế hoặc trước khi thực hiện
+	- nguyên lý pareto ứng dụng vào kiểm thucwr phần mềm
+		(mất 80% thời gian đế kiểm tra ra 20% lỗi)
+	- việc kiểm thử nên được thực hiện trong phạm vi nhỏ rồi hướng tới phạm vi lớn.
+	- kiểm thử toàn bộ là không thể
+	- việc kiểm thử nên được thực hiện bởi một bên thứ 3 độc lập
+ 
+
+
+3: khả năng kiểm tra(testability)
+	-khả năng vận hành (operability) - vận hành rõ ràng
+	- khả năng quan sát
+
+4:
